@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"></meta>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out the survey</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name<input id="name" type="text" name="name" placeholder="Enter your name" required/></label>
+        <label id="email-label">Email<input id="email" name="email" type="email" placeholder="Enter you email" required/></label>
+        <label id="number-label">Age (optional)<input id="number" name="age" type="number" min="13" max="110" placeholder="Age"/></label>
+      </fieldset>
+      <fieldset>
+        <label>If you had to choose one, which programming language would you like to learn?
+          <select id="dropdown" name="preferred language">
+            <option "">(select one)</option>
+            <option value="1">Python</option>
+            <option value="2">JavaScript</option>
+            <option value="3">Java</option>
+            <option value="4">Swift</option>
+            <option value="5">C</option>
+            <option value="6">Other</option>
+          </select>
+        </label>
+        <label>Please tell us why. (optional)
+          <textarea name="reason" rows="3" cols="30" placeholder="Optional.  Please explain in a few sentence."></textarea>
+        </label>
+      </fieldset>
+      <fieldset>Would you like to learn your preferred language for free or enroll in a bootcamp?
+        <label><input type="radio" name="preferred_language" value="Free" class="inline"/>Free</label>
+        <label><input type="radio" name="preferred_language" value="Bootcamp" class="inline" />Bootcamp</label>
+      </fieldset>
+      <fieldset>Check all the resources that help you learn.
+        <label><input type="checkbox" value="checkbox" name="resources" class="inline"  />Youtube</label>
+        <label><input type="checkbox" value="checkbox" name="resources"
+class="inline"  />Books</label>
+        <label><input type="checkbox" value="checkbox" name="resources"
+class="inline"  />Teacher Instruction</label>
+        <label><input type="checkbox" value="checkbox" name="resources"  
+class="inline"/>Self-Taught</label>
+        <label><input type="checkbox" value="checkbox" name="resources"
+class="inline"  />Hands-On</label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit"/>
+    </form>
+  </body>
+</html>
